@@ -90,7 +90,7 @@
 					<muleVersion>3.9.0</muleVersion>
 				    <!-- <username>${username}</username>
 					<password>${password}</password>-->
-					<server>cloudhub</server>
+					<target>cloudhub</target>
 					<url>https://anypoint.mulesoft.com</url>
 					<redeploy>true</redeploy>
 					<environment>Sandbox</environment>
