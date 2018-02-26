@@ -91,7 +91,7 @@
 				    <!-- <username>${username}</username>
 					<password>${password}</password>-->
 					<target>cloudhub</target>
-					<url>https://anypoint.mulesoft.com</url>
+					<url>https://anypoint.mulesoft.com/accounts/login</url>
 					<redeploy>true</redeploy>
 					<environment>Sandbox</environment>
 				</configuration>
