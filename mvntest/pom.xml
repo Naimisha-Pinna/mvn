@@ -90,6 +90,7 @@
 					<muleVersion>3.9.0</muleVersion>
 					 <username>${username}</username>
 					<password>${password}</password>
+					<domain>${cloudhub.domain}</domain>
 					<target>${MULE_SERVER}</target>
 					<targetType>server</targetType>
 
