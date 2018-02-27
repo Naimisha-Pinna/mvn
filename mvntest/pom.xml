@@ -88,12 +88,12 @@
 					<!-- muleVersion is the runtime version as it appears on the CloudHub 
 						interface -->
 					<muleVersion>3.9.0</muleVersion>
-					<username>${username}</username>
-					<password>${password}</password>
-					<domain>${cloudhubdomain}</domain>
+					<username>${cloudhub.username}</username>
+					<password>${cloudhub.password}</password>
+					<domain>${cloudhub.cloudhubdomain}</domain>
 					<target>${MULE_SERVER}</target>
 					<targetType>server</targetType>
-					<businessGroup>${cloudHubBusinessGroup}</businessGroup>
+					<businessGroup>${cloudhub.cloudHubBusinessGroup}</businessGroup>
 					<!-- <target>cloudhub</target> <targettype>server</targettype> <url>https://anypoint.mulesoft.com/accounts/login</url> -->
 					<redeploy>true</redeploy>
 					<environment>Sandbox</environment>
