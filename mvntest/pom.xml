@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>mvntest</artifactId>
+	<artifactId>mvntest1</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
 	<name>Mule mvntest Application</name>
@@ -88,15 +88,15 @@
 					<!-- muleVersion is the runtime version as it appears on the CloudHub 
 						interface -->
 					<muleVersion>3.9.0</muleVersion>
-					 <username>${username}</username>
-					<password>${password}</password>
-					<domain>${cloudhub.domain}</domain>
-					<target>${MULE_SERVER}</target>
-					<targetType>server</targetType>
+					 <!-- <username>${username}</username>
+					<password>${password}</password> -->
+					<domain>cloudub.io</domain>
+					<!-- <target>${MULE_SERVER}</target>
+					<targetType>server</targetType>-->
 
 					
 
-					<businessGroup>${cloudHubBusinessGroup}</businessGroup>
+					<!-- <businessGroup>${cloudHubBusinessGroup}</businessGroup>-->
 					<!-- <target>cloudhub</target> <targettype>server</targettype> <url>https://anypoint.mulesoft.com/accounts/login</url> -->
 					<redeploy>true</redeploy>
 					<environment>Sandbox</environment>
