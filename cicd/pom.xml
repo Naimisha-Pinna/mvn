@@ -82,7 +82,33 @@
 						</coverage>
 					</configuration>
 				</plugin>
-				
+				<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<deploymentType>cloudhub</deploymentType>
+					<!-- muleVersion is the runtime version as it appears on the CloudHub 
+						interface -->
+					<muleVersion>3.9.0</muleVersion>
+					<username>${cloudhub.username}</username>
+					<password>${cloudhub.password}</password>
+					
+					
+					<!-- <target>cloudhub</target> <targettype>server</targettype> <url>https://anypoint.mulesoft.com/accounts/login</url> -->
+					<redeploy>true</redeploy>
+					<environment>${environment}</environment>
+				</configuration>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
 
 			</plugins>
