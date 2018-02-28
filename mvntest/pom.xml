@@ -96,7 +96,7 @@
 					<businessGroup>${cloudhub.cloudHubBusinessGroup}</businessGroup>
 					<!-- <target>cloudhub</target> <targettype>server</targettype> <url>https://anypoint.mulesoft.com/accounts/login</url> -->
 					<redeploy>true</redeploy>
-					<environment>Sandbox</environment>
+					<environment>${environment}</environment>
 				</configuration>
 				<executions>
 					<execution>
