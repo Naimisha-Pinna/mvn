@@ -94,7 +94,7 @@
 
 					<!-- <target>cloudhub</target> <targettype>server</targettype> <url>https://anypoint.mulesoft.com/accounts/login</url> -->
 					<redeploy>true</redeploy>
-					<environment>${environment}</environment>
+					<environment>Sandbox</environment>
 				</configuration>
 				<executions>
 					<execution>
