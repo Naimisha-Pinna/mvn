@@ -9,7 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
     <flow name="clouddeployFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/clouddeploy" doc:name="HTTP" allowedMethods="GET"/>
-        <set-payload value="Hello world worked" doc:name="Set Payload"/>
+        <set-payload value="Hello world worked redeploy" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
