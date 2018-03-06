@@ -208,9 +208,21 @@
 			<version>${munit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+            <groupId>com.mycompany.app</groupId>
+            <artifactId>my-app</artifactId>
+            <version>1.0-20180305.082720-1</version>
+            <scope>provided</scope>
+        </dependency>
 	</dependencies>
 
 	<repositories>
+		<repository>
+      		<id>nexus</id>
+      		<name>local nexus repository</name>
+     	 		<url>http://54.92.174.202:8081/repository/maven-public/</url>
+      		<layout>default</layout>
+    			</repository>
 		<repository>
 			<id>Central</id>
 			<name>Central</name>
