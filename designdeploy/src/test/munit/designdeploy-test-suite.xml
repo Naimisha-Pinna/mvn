@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     </spring:beans>
     <munit:test name="designdeploy-test-suite-designdeployFlowTest" description="Test">
         <flow-ref name="designdeployFlow" doc:name="Flow-ref to designdeployFlow"/>
-        <munit:assert-on-equals expectedValue="Design worked" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals expectedValue="Design worked redeploy" actualValue="#[payload]" doc:name="Assert Equals"/>
     </munit:test>
 </mule>
