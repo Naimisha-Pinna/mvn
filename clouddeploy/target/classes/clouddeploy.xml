@@ -7,9 +7,13 @@
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="${http.port}" doc:name="HTTP Listener Configuration"/>
+    <spring:beans>
+        <spring:bean id="JarBean" name="JarBean" class="com.mycompany.app.HelloWorld"/>
+    </spring:beans>
     <flow name="clouddeployFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/clouddeploy" doc:name="HTTP" allowedMethods="GET"/>
-        <set-payload value="Hello world worked redeploy done " doc:name="Set Payload"/>
+        <invoke object-ref="JarBean" method="display" doc:name="Invoke"/>
+        <set-payload value="#[payload] worked redeploy done 1" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
