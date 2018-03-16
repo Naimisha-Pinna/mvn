@@ -13,7 +13,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <flow name="clouddeployFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/clouddeploy" doc:name="HTTP" allowedMethods="GET"/>
         <invoke object-ref="JarBean" method="display" doc:name="Invoke"/>
-        <set-payload value="#[payload] worked redeploy done successfully no errors found" doc:name="Set Payload"/>
+        <set-payload value="#[payload] worked redeploy done successfully no errors found!" doc:name="Set Payload"/>
         <logger message="#[payload]" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>

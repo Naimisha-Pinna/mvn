@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/cor
     </spring:beans>
     <munit:test name="clouddeploy-test-suite-clouddeployFlowTest" description="Test">
         <flow-ref name="clouddeployFlow" doc:name="Flow-ref to clouddeployFlow"/>
-        <munit:assert-on-equals expectedValue="Hello World! worked redeploy done successfully no errors found" actualValue="#[payload]" doc:name="Assert Equals"/>
+        <munit:assert-on-equals expectedValue="Hello World! worked redeploy done successfully no errors found!" actualValue="#[payload]" doc:name="Assert Equals"/>
     </munit:test>
 </mule>
